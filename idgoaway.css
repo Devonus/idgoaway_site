@@ -29,6 +29,8 @@ main {
   height: 100%;
   flex-shrink: 0;
   background: url(pics/mikulov.jpg), lightgray 50% / cover no-repeat;
+  object-fit: cover;
+  background-size: cover;
 }
 
 .black-background {
@@ -48,8 +50,8 @@ main {
 
 .navbar > div {
   padding-top: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
 }
 .flexbox {
   /* height: 100%; */
@@ -90,4 +92,17 @@ h1 {
   font-weight: 700;
   line-height: 0px; /* 0% */
   font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+  .flexbox {
+    /* height: 100%; */
+    padding: 50% 0% 10% 0%;
+    /* display: flex; */
+    /*this centers the text horizontally*/
+    justify-content: center;
+
+    /*this centers the text vertically*/
+    align-items: center;
+  }
 }
